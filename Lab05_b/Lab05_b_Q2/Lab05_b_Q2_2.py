@@ -6,4 +6,10 @@ class Vehicle:
         self.mileage = mileage
 
     def seating_capacity(self, capacity):
-        result f"The seating  capacity of a {self.name} is {capacity} passengers "
+        return f"The seating capacity of a {self.name} is {capacity} passengers"
+
+class Bus(Vehicle):
+
+    def __init__(self, name, max_speed, mileage):
+        super().__init__(name, max_speed, mileage)
+        self.seating_capacity(50)
